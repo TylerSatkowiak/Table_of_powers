@@ -1,15 +1,16 @@
 ﻿using System;
+using System.Runtime.ExceptionServices;
 namespace Table_of_powers
 {
     class Program
     {
         static void Main()
         {
-            int number = 0;
+            long number = 0;
             //Ask the user for an input and compare that input to the numbers in array
             Console.WriteLine("Please enter an integer and I will grab the square and cube of that number:");
             string entry = Console.ReadLine();
-            number = int.Parse(entry);
+            number = long.Parse(entry);
 
             //Take user input and assure it is postive, if it is, send into Printout Method
             if (number <= 0)
@@ -29,26 +30,22 @@ namespace Table_of_powers
             else Console.WriteLine("Thanks for playing, Ta Ta now ;)");
             
         }
-        static void Printout(int number)
+        static void Printout(long number)
         {
-            Console.WriteLine($"Number\t\t\t Squared \t \t Cubed");
-            Console.WriteLine($"======\t\t\t ====== \t \t ======");
-            //For each number up to the value input, print the number, then the square/cube (max out at 1290^3)
-            for (int i = 0; i < number;)
+            //Format Columns to the right
+            Console.WriteLine(String.Format("{0,15} {1,15} {2,15}","Number","Squared","Cubed"));
+            Console.WriteLine(String.Format("{0,15} {1,15} {2,15}","======","======","======"));
+
+            //For each number up to the value input, print the number, then the square/cube, print out to the right side as strings
+            for (long i = 0; i < number;)
             {
                 i++;
-                int square = i * i;
-                int cube = i * i * i;
-                if (i >= 1000)
-                {
-                    Console.WriteLine($"{i} \t  \t \t {square} \t \t {cube}");
-                }
-                if(i >= 1291)
-                {
-                    Console.WriteLine("This number is too large");
-                    Main();
-                }
-                else Console.WriteLine(String.Format($"{i} \t  \t \t {square}\t \t {cube}"));
+                long square = i * i;
+                long cube = i * i * i;
+                string first = i.ToString("N0");
+                string second = square.ToString("N0");
+                string third = cube.ToString("N0");
+                Console.WriteLine(String.Format("{0,15} {1,15} {2,15}", first, second, third));
             }
         }
     }
