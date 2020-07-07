@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Table_of_powers", "Table_of_powers.csproj", "{4635E3FD-C0B0-4E16-A414-DEC2DB2D9E23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4635E3FD-C0B0-4E16-A414-DEC2DB2D9E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4635E3FD-C0B0-4E16-A414-DEC2DB2D9E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4635E3FD-C0B0-4E16-A414-DEC2DB2D9E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4635E3FD-C0B0-4E16-A414-DEC2DB2D9E23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4CB915B-FD9B-4FD5-B86D-9648DBF0478F}
+	EndGlobalSection
+EndGlobal
